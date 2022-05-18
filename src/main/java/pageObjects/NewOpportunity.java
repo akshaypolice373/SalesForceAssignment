@@ -11,9 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import resources.BaseClass;
 
-public class CreateNewOpportunity extends BaseClass {
+public class NewOpportunity extends BaseClass {
 	
-	public CreateNewOpportunity(WebDriver driver) {
+	public NewOpportunity(WebDriver driver) {
 		this.driver = driver;
 	}
 	
@@ -101,8 +101,8 @@ public class CreateNewOpportunity extends BaseClass {
 	}
 	
 	public String getCreatedOpportunityText() {
-		String text = driver.findElement(createOpportunitytext).getText();
-		return text;
+		
+		return driver.findElement(createOpportunitytext).getText();
 	}
 	
 }
